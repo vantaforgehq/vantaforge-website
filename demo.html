@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demo workspace — Vanta Forge</title>
+<meta name="description" content="A sample Vanta Forge workspace with demo data. Nothing you change is saved.">
+<meta property="og:title" content="Demo workspace — Vanta Forge">
+<meta property="og:description" content="A sample Vanta Forge workspace with demo data. Nothing you change is saved.">
+<meta name="theme-color" content="#0B0B0C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&amp;family=Barlow:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{margin:0;background:#0B0B0C}
+a{color:#F5F5F4}a:hover{color:#FF7A1A}
+
+.flt{font-family:inherit;font-size:14px;font-weight:600;height:40px;padding:0 16px;border-radius:20px;cursor:pointer;background:transparent;color:#D4D4D8;border:1px solid #3A3A3F}
+.flt[aria-selected="true"]{background:#F5F5F4;color:#0B0B0C;border-color:#F5F5F4}
+
+</style>
+</head>
+<body>
+
+<div style="background: #0B0B0C; color: #F5F5F4; font-family: 'Barlow', system-ui, sans-serif; font-size: 15px; line-height: 1.5; min-height: 1100px">
+
+
+<div style="background: #FF6A13; color: #0B0B0C; padding: 10px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 20px; font-size: 14px; font-weight: 600">
+<span style="font-family: 'JetBrains Mono', monospace; letter-spacing: 0.1em">DEMO WORKSPACE</span>
+<span style="font-weight: 500">Sample data only. Nothing you change here is saved.</span>
+<a href="mailto:admin@vantaforge.co.za?subject=Vanta%20Forge%20demo" style="color: #0B0B0C; text-decoration: underline">Book a real demo</a>
+</div>
+
+
+<header style="border-bottom: 1px solid #1F1F22; padding: 12px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<div style="display: flex; align-items: center; gap: 20px">
+<a href="/" aria-label="Vanta Forge website" style="text-decoration: none; display: inline-flex; flex-direction: column; align-items: center; gap: 1px; color: #F5F5F4">
+<span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 22px; letter-spacing: 0.14em; line-height: 1">VANTA</span>
+<span style="display: flex; align-items: center; gap: 6px">
+<span style="display: block; width: 12px; height: 3px; background: #FF6A13; transform: skewX(-30deg)"></span>
+<span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 9px; letter-spacing: 0.42em; line-height: 1; padding-left: 0.42em">FORGE</span>
+<span style="display: block; width: 12px; height: 3px; background: #FF6A13; transform: skewX(-30deg)"></span>
+</span>
+</a>
+<span style="width: 1px; height: 28px; background: #26262A"></span>
+<span style="font-weight: 600">Demo Fabrication (Pty) Ltd</span>
+</div>
+<div style="display: flex; align-items: center; gap: 16px">
+<label for="search" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap">Search quotes</label>
+<input id="search" type="search" placeholder="Search quotes, customers, parts" style="width: 280px; max-width: 60vw; height: 40px; box-sizing: border-box; padding: 0 12px; background: #141416; border: 1px solid #2E2E33; border-radius: 4px; color: #F5F5F4; font-family: inherit; font-size: 14px">
+<span aria-label="Signed in as Demo User" role="img" style="width: 36px; height: 36px; border-radius: 50%; background: #26262A; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; font-size: 13px">DU</span>
+<a href="/login.html" style="text-decoration: none; color: #A8A8AD; font-size: 14px">Sign out</a>
+</div>
+</header>
+
+<div style="display: flex; flex-wrap: wrap">
+
+<nav aria-label="Modules" style="flex: 1 1 220px; max-width: 100%; box-sizing: border-box; padding: 20px 14px; border-right: 1px solid #1F1F22; display: flex; flex-direction: column; gap: 2px">
+<a href="#" style="text-decoration: none; display: flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 4px; color: #B4B4B9; font-weight: 500">Dashboard</a>
+<a href="#" style="text-decoration: none; display: flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 4px; background: #1A1A1D; color: #F5F5F4; font-weight: 600; box-shadow: inset 3px 0 0 #FF6A13" aria-current="page">Quotes</a>
+<a href="#" style="text-decoration: none; display: flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 4px; color: #B4B4B9; font-weight: 500">Draw</a>
+<a href="#" style="text-decoration: none; display: flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 4px; color: #B4B4B9; font-weight: 500">Nest</a>
+<a href="#" style="text-decoration: none; display: flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 4px; color: #B4B4B9; font-weight: 500">Bend</a>
+<a href="#" style="text-decoration: none; display: flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 4px; color: #B4B4B9; font-weight: 500">Weld</a>
+<a href="#" style="text-decoration: none; display: flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 4px; color: #B4B4B9; font-weight: 500">Stock</a>
+<a href="#" style="text-decoration: none; display: flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 4px; color: #B4B4B9; font-weight: 500">Purchasing</a>
+<a href="#" style="text-decoration: none; display: flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 4px; color: #B4B4B9; font-weight: 500">Production</a>
+<a href="#" style="text-decoration: none; display: flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 4px; color: #B4B4B9; font-weight: 500">Assets</a>
+<a href="#" style="text-decoration: none; display: flex; align-items: center; min-height: 40px; padding: 0 14px; border-radius: 4px; color: #B4B4B9; font-weight: 500">Settings</a>
+
+</nav>
+
+
+<main style="flex: 999 1 560px; min-width: 0; box-sizing: border-box; padding: 32px 40px 56px; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px">
+<div>
+<p style="margin: 0 0 4px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #A8A8AD">FORGE QUOTE</p>
+<h1 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 44px; line-height: 1; text-transform: uppercase">Quotes</h1>
+</div>
+<button type="button" style="background: #FF6A13; color: #0B0B0C; border: 0; font-family: inherit; font-weight: 600; font-size: 15px; height: 44px; padding: 0 20px; border-radius: 4px; cursor: pointer">+ New quote</button>
+</div>
+
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 16px">
+
+<div style="background: #121214; border: 1px solid #26262A; border-radius: 8px; padding: 18px 20px; display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 13px; color: #A8A8AD">Drafts</span>
+<span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 36px; line-height: 1.1">2</span>
+</div>
+
+<div style="background: #121214; border: 1px solid #26262A; border-radius: 8px; padding: 18px 20px; display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 13px; color: #A8A8AD">In review</span>
+<span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 36px; line-height: 1.1">2</span>
+</div>
+
+<div style="background: #121214; border: 1px solid #26262A; border-radius: 8px; padding: 18px 20px; display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 13px; color: #A8A8AD">Sent, awaiting reply</span>
+<span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 36px; line-height: 1.1">2</span>
+</div>
+
+<div style="background: #121214; border: 1px solid #26262A; border-radius: 8px; padding: 18px 20px; display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 13px; color: #A8A8AD">Approved this month</span>
+<span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 36px; line-height: 1.1">R 62 440</span>
+</div>
+
+</div>
+
+
+<div style="border: 1.5px dashed #3A3A3F; border-radius: 8px; padding: 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; background: #0F0F11">
+<div style="display: flex; align-items: center; gap: 18px">
+<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#FF6A13" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V4"></path><path d="M7 9l5-5 5 5"></path><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"></path></svg>
+<div>
+<p style="margin: 0; font-weight: 600; font-size: 16px">Drop drawings here to start a quote</p>
+<p style="margin: 0; color: #A8A8AD; font-size: 14px">DXF, STEP or PDF</p>
+</div>
+</div>
+<button type="button" style="background: transparent; color: #F5F5F4; border: 1px solid #3A3A3F; font-family: inherit; font-weight: 600; font-size: 14px; height: 44px; padding: 0 18px; border-radius: 4px; cursor: pointer">Browse files</button>
+</div>
+
+
+<div role="tablist" aria-label="Filter quotes by status" style="display: flex; flex-wrap: wrap; gap: 8px">
+<button type="button" role="tab" class="flt" data-filter="All" aria-selected="true">All (8)</button>
+<button type="button" role="tab" class="flt" data-filter="Draft" aria-selected="false">Draft (2)</button>
+<button type="button" role="tab" class="flt" data-filter="In review" aria-selected="false">In review (2)</button>
+<button type="button" role="tab" class="flt" data-filter="Sent" aria-selected="false">Sent (2)</button>
+<button type="button" role="tab" class="flt" data-filter="Approved" aria-selected="false">Approved (2)</button>
+
+</div>
+
+
+<div style="border: 1px solid #26262A; border-radius: 8px; overflow-x: auto">
+<table style="width: 100%; min-width: 860px; border-collapse: collapse; font-size: 15px">
+<thead>
+<tr style="background: #121214; text-align: left">
+<th scope="col" style="padding: 12px 16px; font-size: 12px; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.08em; color: #A8A8AD; font-weight: 500">QUOTE</th>
+<th scope="col" style="padding: 12px 16px; font-size: 12px; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.08em; color: #A8A8AD; font-weight: 500">CUSTOMER</th>
+<th scope="col" style="padding: 12px 16px; font-size: 12px; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.08em; color: #A8A8AD; font-weight: 500">PART</th>
+<th scope="col" style="padding: 12px 16px; font-size: 12px; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.08em; color: #A8A8AD; font-weight: 500">MATERIAL</th>
+<th scope="col" style="padding: 12px 16px; font-size: 12px; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.08em; color: #A8A8AD; font-weight: 500; text-align: right">QTY</th>
+<th scope="col" style="padding: 12px 16px; font-size: 12px; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.08em; color: #A8A8AD; font-weight: 500; text-align: right">VALUE</th>
+<th scope="col" style="padding: 12px 16px; font-size: 12px; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.08em; color: #A8A8AD; font-weight: 500">STATUS</th>
+</tr>
+</thead>
+<tbody>
+
+<tr data-status="Draft" style="border-top: 1px solid #1F1F22">
+<td style="padding: 14px 16px; font-family: 'JetBrains Mono', monospace; font-size: 13px"><a href="#" style="text-decoration: none">Q-1048</a></td>
+<td style="padding: 14px 16px">Northgate Engineering</td>
+<td style="padding: 14px 16px; color: #D4D4D8">Mounting bracket set</td>
+<td style="padding: 14px 16px; color: #B4B4B9">304 SS · 2 mm</td>
+<td style="padding: 14px 16px; text-align: right; font-variant-numeric: tabular-nums">120</td>
+<td style="padding: 14px 16px; text-align: right; font-variant-numeric: tabular-nums; font-weight: 600">R 18 450</td>
+<td style="padding: 14px 16px"><span style="display: inline-flex; align-items: center; height: 26px; padding: 0 10px; border-radius: 3px; font-size: 13px; font-weight: 600; white-space: nowrap; border: 1px solid #55555B; color: #D4D4D8">Draft</span></td>
+</tr>
+
+<tr data-status="In review" style="border-top: 1px solid #1F1F22">
+<td style="padding: 14px 16px; font-family: 'JetBrains Mono', monospace; font-size: 13px"><a href="#" style="text-decoration: none">Q-1047</a></td>
+<td style="padding: 14px 16px">Kestrel Enclosures</td>
+<td style="padding: 14px 16px; color: #D4D4D8">DB enclosure, wall mount</td>
+<td style="padding: 14px 16px; color: #B4B4B9">Mild steel · 1.6 mm</td>
+<td style="padding: 14px 16px; text-align: right; font-variant-numeric: tabular-nums">24</td>
+<td style="padding: 14px 16px; text-align: right; font-variant-numeric: tabular-nums; font-weight: 600">R 41 280</td>
+<td style="padding: 14px 16px"><span style="display: inline-flex; align-items: center; height: 26px; padding: 0 10px; border-radius: 3px; font-size: 13px; font-weight: 600; white-space: nowrap; border: 1px solid #FF6A13; color: #FFB07A">In review</span></td>
+</tr>
+
+<tr data-status="Sent" style="border-top: 1px solid #1F1F22">
+<td style="padding: 14px 16px; font-family: 'JetBrains Mono', monospace; font-size: 13px"><a href="#" style="text-decoration: none">Q-1046</a></td>
+<td style="padding: 14px 16px">Ridgeway Agri</td>
+<td style="padding: 14px 16px; color: #D4D4D8">Hopper side panels</td>
+<td style="padding: 14px 16px; color: #B4B4B9">Mild steel · 3 mm</td>
+<td style="padding: 14px 16px; text-align: right; font-variant-numeric: tabular-nums">16</td>
+<td style="padding: 14px 16px; text-align: right; font-variant-numeric: tabular-nums; font-weight: 600">R 27 900</td>
+<td style="padding: 14px 16px"><span style="display: inline-flex; align-items: center; height: 26px; padding: 0 10px; border-radius: 3px; font-size: 13px; font-weight: 600; white-space: nowrap; background: #F5F5F4; color: #0B0B0C">Sent</span></td>
+</tr>
+
+<tr data-status="Approved" style="border-top: 1px solid #1F1F22">
+<td style="padding: 14px 16px; font-family: 'JetBrains Mono', monospace; font-size: 13px"><a href="#" style="text-decoration: none">Q-1045</a></td>
+<td style="padding: 14px 16px">Bluecrest Signage</td>
+<td style="padding: 14px 16px; color: #D4D4D8">Letter cut-outs</td>
+<td style="padding: 14px 16px; color: #B4B4B9">Aluminium 5083 · 3 mm</td>
+<td style="padding: 14px 16px; text-align: right; font-variant-numeric: tabular-nums">1 lot</td>
+<td style="padding: 14px 16px; text-align: right; font-variant-numeric: tabular-nums; font-weight: 600">R 9 640</td>
+<td style="padding: 14px 16px"><span style="display: inline-flex; align-items: center; height: 26px; padding: 0 10px; border-radius: 3px; font-size: 13px; font-weight: 600; white-space: nowrap; background: #FF6A13; color: #0B0B0C">Approved</span></td>
+</tr>
+
+<tr data-status="Sent" style="border-top: 1px solid #1F1F22">
+<td style="padding: 14px 16px; font-family: 'JetBrains Mono', monospace; font-size: 13px"><a href="#" style="text-decoration: none">Q-1044</a></td>
+<td style="padding: 14px 16px">Ironbark Trailers</td>
+<td style="padding: 14px 16px; color: #D4D4D8">Mudguard brackets</td>
+<td style="padding: 14px 16px; color: #B4B4B9">Mild steel · 4 mm</td>
+<td style="padding: 14px 16px; text-align: right; font-variant-numeric: tabular-nums">200</td>
+<td style="padding: 14px 16px; text-align: right; font-variant-numeric: tabular-nums; font-weight: 600">R 33 120</td>
+<td style="padding: 14px 16px"><span style="display: inline-flex; align-items: center; height: 26px; padding: 0 10px; border-radius: 3px; font-size: 13px; font-weight: 600; white-space: nowrap; background: #F5F5F4; color: #0B0B0C">Sent</span></td>
+</tr>
+
+<tr data-status="Approved" style="border-top: 1px solid #1F1F22">
+<td style="padding: 14px 16px; font-family: 'JetBrains Mono', monospace; font-size: 13px"><a href="#" style="text-decoration: none">Q-1043</a></td>
+<td style="padding: 14px 16px">Summit Racking</td>
+<td style="padding: 14px 16px; color: #D4D4D8">Upright base plates</td>
+<td style="padding: 14px 16px; color: #B4B4B9">Mild steel · 6 mm</td>
+<td style="padding: 14px 16px; text-align: right; font-variant-numeric: tabular-nums">400</td>
+<td style="padding: 14px 16px; text-align: right; font-variant-numeric: tabular-nums; font-weight: 600">R 52 800</td>
+<td style="padding: 14px 16px"><span style="display: inline-flex; align-items: center; height: 26px; padding: 0 10px; border-radius: 3px; font-size: 13px; font-weight: 600; white-space: nowrap; background: #FF6A13; color: #0B0B0C">Approved</span></td>
+</tr>
+
+<tr data-status="In review" style="border-top: 1px solid #1F1F22">
+<td style="padding: 14px 16px; font-family: 'JetBrains Mono', monospace; font-size: 13px"><a href="#" style="text-decoration: none">Q-1042</a></td>
+<td style="padding: 14px 16px">Northgate Engineering</td>
+<td style="padding: 14px 16px; color: #D4D4D8">Guard cover</td>
+<td style="padding: 14px 16px; color: #B4B4B9">304 SS · 1.2 mm</td>
+<td style="padding: 14px 16px; text-align: right; font-variant-numeric: tabular-nums">30</td>
+<td style="padding: 14px 16px; text-align: right; font-variant-numeric: tabular-nums; font-weight: 600">R 12 360</td>
+<td style="padding: 14px 16px"><span style="display: inline-flex; align-items: center; height: 26px; padding: 0 10px; border-radius: 3px; font-size: 13px; font-weight: 600; white-space: nowrap; border: 1px solid #FF6A13; color: #FFB07A">In review</span></td>
+</tr>
+
+<tr data-status="Draft" style="border-top: 1px solid #1F1F22">
+<td style="padding: 14px 16px; font-family: 'JetBrains Mono', monospace; font-size: 13px"><a href="#" style="text-decoration: none">Q-1041</a></td>
+<td style="padding: 14px 16px">Kestrel Enclosures</td>
+<td style="padding: 14px 16px; color: #D4D4D8">Gland plates</td>
+<td style="padding: 14px 16px; color: #B4B4B9">Galvanised · 1.6 mm</td>
+<td style="padding: 14px 16px; text-align: right; font-variant-numeric: tabular-nums">150</td>
+<td style="padding: 14px 16px; text-align: right; font-variant-numeric: tabular-nums; font-weight: 600">R 7 950</td>
+<td style="padding: 14px 16px"><span style="display: inline-flex; align-items: center; height: 26px; padding: 0 10px; border-radius: 3px; font-size: 13px; font-weight: 600; white-space: nowrap; border: 1px solid #55555B; color: #D4D4D8">Draft</span></td>
+</tr>
+
+</tbody>
+</table>
+
+<p id="empty" hidden style="margin: 0; padding: 32px; text-align: center; color: #A8A8AD">No quotes with this status.</p>
+
+</div>
+</main>
+</div>
+
+</div>
+
+<script>
+(function(){
+  var btns = document.querySelectorAll('.flt');
+  var rows = document.querySelectorAll('tr[data-status]');
+  var empty = document.getElementById('empty');
+  btns.forEach(function(b){
+    b.addEventListener('click', function(){
+      var f = b.getAttribute('data-filter'), shown = 0;
+      btns.forEach(function(x){ x.setAttribute('aria-selected', x === b ? 'true' : 'false'); });
+      rows.forEach(function(r){
+        var on = f === 'All' || r.getAttribute('data-status') === f;
+        r.hidden = !on; if (on) shown++;
+      });
+      if (empty) empty.hidden = shown !== 0;
+    });
+  });
+})();
+</script>
+</body>
+</html>
